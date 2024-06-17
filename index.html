@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Basics</title>
+    <title>Dr Dowell CV</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
@@ -27,24 +27,31 @@
         <p>Andrew’s ambition is to own a comprehensive technical arsenal that will enable him to be an expert on creating distributed, fault tolerant, scalable and secure technological solutions. 
           This involves all aspects of the software development lifecycle, from translating abstract ideas into functioning code to hosting production standard services.</p>
 
-          <p>Areas of interest include:</p>
-        
-        <ul>
-          <li>Algorithms And Data Structures.</li>
-          <li>Functional and Object Orientated Programming.</li>
-          <li>Kubernetes and Containerized Solutions.</li>
-          <li>Kafka and Distributed Data Pipelines.</li>
-          <li>Cloud Computing.</li>
-        </ul> 
       </article>
-  
-      <section id="controls" v-else>
-        <button  onclick="window.location.href = 'academicHistory.html';" value="Redirect"/>Academic History</button>
-        <button  onclick="window.location.href = 'professionalHistory.html';" value="Redirect"/>Professional History</button>
-        <button  onclick="window.location.href = 'https://medium.com/@dowaj/';" value="Redirect"/>Blog Articles</button>
-        <button  onclick="window.location.href = 'https://github.com/DocDoWell';" value="Redirect"/>Personal Projects</button>
-      </section>
 
+    </nav>
+    <nav id="controls" v-else>
+      <button  @click="academicHistory"/>Academic History</button>
+      <button  @click="professionalHistory"/>Professional History</button>
+      <button  @click="blog"/>Blog Articles</button>
+      <button  @click="personalProjects"/>Personal Projects</button>
+    </nav>
+      
+    </section>
+
+    <section>
+      <nav>
+      <p>Areas of interest include:</p>
+        
+      <ul>
+        <li>Algorithms And Data Structures.</li>
+        <li>Functional and Object Orientated Programming.</li>
+        <li>Kubernetes and Containerized Solutions.</li>
+        <li>Kafka and Distributed Data Pipelines.</li>
+        <li>Cloud Computing.</li>
+        <li>Microservice Architecture</main>.</li>
+      </ul> 
+  
   </section>
 
     </body>
